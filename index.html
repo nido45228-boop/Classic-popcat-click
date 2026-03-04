@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>POPCAT CLASSIC</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            body {
+                font-family: sans-serif;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .box {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                background-color: #bdaa90;
+                margin: 0;
+                padding: 0;
+            }
+            .title {
+                width: 80%;
+                margin-top: 2em;
+                max-width: 600px;
+            }
+            .cat-img {
+                width: 100%;
+                max-width: 800px;
+                text-align: center;
+                color: #ffffff;
+                font-size: 80px;
+                -webkit-text-stroke: 3px #000000;
+                flex: 1;
+            }
+            #p {
+                background-image: url('imgs/p.png');
+                background-position: bottom center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #p2 {
+                background-image: url('imgs/p.png');
+                background-position: bottom center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #op {
+                background-image: url('imgs/op.png');
+                background-position: bottom center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                max-width: 800px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <img class="title" src="imgs/popcat.svg" alt="POPCAT CLASSIC" width="400px">
+            <div class="cat-img" id="p">0</div>
+        </div>
+        <div class="box" id="p2"></div>
+    </body>
+</html>
