@@ -77,9 +77,13 @@
                 count++;
                 catImg.innerHTML = count;
                 catImg.id = 'op';
+                const audio = new Audio('pops/pop1.mp3');
+                audio.play();
             }
             let close = ()=> {
-                catImg.id = 'p';
+                setTimeout(() => {
+                    catImg.id = 'p';
+                }, 25);
             }
 
             document.addEventListener('pointerdown', addCount);
